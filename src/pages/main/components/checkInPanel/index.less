@@ -1,0 +1,44 @@
+.checkin-panel{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 270px;
+    .chart-item{
+        width: 20%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center
+    }
+    .title{
+        width: 100%;
+        text-align: center;
+        color: #C5E0FE;
+        font-size: 13px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &::before {
+        display: inline-block;
+        position: absolute;
+        left: -30px;
+        top: 0;
+        width: 33px;
+        height: 142px;
+        background: url('./assets/ruzhu_bg.png') no-repeat;
+        background-size: 100%;
+        content: '入住率排行';
+        color: #1CE6F4;
+        font-size: 16px;
+        writing-mode: vertical-lr;
+        text-align: center;
+        line-height: 33px;
+    }
+
+}
+.htmlguide{
+    color: #C5E0FE;
+    font-size: 15px;
+}

@@ -1,0 +1,54 @@
+.hotel-item {
+    width: 780px;
+    height: 220px;
+    background: url('./assets/jiudian_bg.png') no-repeat;
+    background-size: 100%;
+    padding: 30px;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    >img{
+        width: 250px;
+        height: 160px;
+    }
+    .content{
+        flex: 1;
+        margin-left: 28px;
+        .first{
+            margin-bottom: 40px;
+        }
+        .item{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            color: #fff;
+            font-size: 12px;
+            margin-bottom: 17px;
+            span + span {
+                margin-left: 60px;
+            }
+            .day {
+                font-family: Impact;
+                font-size: 18px;
+                color: #FFF608;
+                font-weight: 500;
+            }
+        }
+        .item-left,.item-right {
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between
+        }
+        .item-left {
+            margin-right: 50px
+        }
+        span{
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+        .name {
+            font-size: 18px;
+        }
+    }
+}

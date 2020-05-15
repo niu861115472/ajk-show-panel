@@ -1,0 +1,100 @@
+.order-panel{
+    height: 382px;
+    background: url('./assets/fenge.png') no-repeat;
+    background-position: center bottom;
+    background-size: 504px 22px;
+    position: relative;
+    // overflow: hidden;
+    .chart {
+        padding-bottom: 30px
+    }
+    &::before {
+        display: inline-block;
+        position: absolute;
+        width: 33px;
+        height: 200px;
+        background: url('./assets/didan_bg.png') no-repeat;
+        background-size: 100%;
+        content: '酒店订单统计';
+        left: -30px;
+        top: 0;
+        color: #1CE6F4;
+        font-size: 16px;
+        writing-mode: vertical-lr;
+        text-align: center;
+        line-height: 33px;
+    }
+    .chart {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        right: 20px;
+        height: 302px;
+    }
+}
+.chart-more {
+    position: absolute;
+    left: 108px;
+    right: 31px;
+    top: 23px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    .left {
+        display: flex;
+        font-size: 12px;
+        color: #67C7DB;
+        height: 30px;
+        align-items: center;
+        .item-left:first-child {
+            margin-right: 38px;
+        }
+        img {
+            width: 16px;
+            margin-right: 12px;
+        }
+    }
+    .btns {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        .btn {
+            width: 64px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #67C7DB;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .shishi {
+            background: url('./assets/shishi.png') no-repeat;
+            background-size: 100%;
+        }
+        .intime {
+            background: url('./assets/shishi1.png') no-repeat;
+            background-size: 100%;
+            color: #fff
+        }
+    }
+    .des {
+        color: #B4CDEC;
+        font-size: 12px;
+        margin-top: 0px;
+        // text-align: right;
+        >span{
+            color: #1CE6F4
+        }
+    }
+}
+
+.labelAxis {
+    color: #fff;
+    // white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 12px;
+}
